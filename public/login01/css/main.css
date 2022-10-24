@@ -36,12 +36,11 @@
 	padding: 0px; 
 	box-sizing: border-box;
 }
-body{
-  background-image: url("/registro01/images/signup-bg.jpg");
-}
+
 body, html {
 	height: 100%;
 	font-family: Poppins-Regular, sans-serif;
+  
 }
 
 /*---------------------------------------------*/
@@ -176,7 +175,8 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #f2f2f2;  
+  background-size: cover;
+  background-image: url("/registro01/images/signup-bg.jpg");
 }
 
 .wrap-login100 {
