@@ -12,7 +12,11 @@
 </head>
 
 <body>
-
+    @if($errors->any())
+    <script>
+        alert("Datos faltantes o incorrectos");
+    </script>
+    @endif
     <div class="cont-regi-max">
         <a href="/login">
             <p class="titulo">MyUniversity</p>
@@ -44,7 +48,7 @@
                         <tr>
                             <th>
                                 <div class="regi">
-                                    <select style="background-color: black; " class="input" name="gender">
+                                    <select class="select-input" name="gender">
                                         <option value="{{old('gender') ?? ''}}">Género</option>
                                         <option value="masculino">Masculino</option>
                                         <option value="femenino">Femenino</option>
@@ -94,7 +98,7 @@
                         </tr>
                     </table>
                     <div class="cent-btn">
-                        <button class="button">
+                        <button class="button-register">
                             Registrar
                         </button>
                     </div>
