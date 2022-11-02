@@ -26,6 +26,7 @@ class StudentRegistrationRequest extends FormRequest
     {
         return [
             'name' => 'required',
+            'Mail' => 'required',
             'degree' => 'required|exists:coordinators,degree',
             'semester' => 'required|numeric|max:16',
         ];

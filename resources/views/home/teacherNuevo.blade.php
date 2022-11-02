@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/home01/css/style.css">
 	<link rel="stylesheet" href="/home01/css/registro.css">
-	<script src="/home01/js/funciones.js"></script>
+	<script src="/home01/js/maestrochido.js"></script>
 </head>
 
 <body>
@@ -36,13 +36,13 @@
 				<ul class="list-unstyled components mb-5">
 					<br><br><br>
 					<li class="active">
-						<span class="fa fa-user mr-3" id="alum"></span><button class="btn-transparent" onclick="visible_alum()">Alumnos</button>
+						<span class="fa fa-user mr-3" id="alum"></span><button class="btn-transparent" onclick="visible_asistencia()">Asistencia</button>
 					</li>
 					<li>
-						<span class="fa fa-user mr-3"></span><button class="btn-transparent" onclick="visible_prof()">Profesores</button>
+						<span class="fa fa-user mr-3"></span><button class="btn-transparent" onclick="visible_calificacion()">Calificacion</button>
 					</li>
 					<li>
-						<span class="fa fa-sticky-note mr-3"></span><button class="btn-transparent" onclick="visible_mat()">Materias</button>
+						<span class="fa fa-sticky-note mr-3"></span><button class="btn-transparent" onclick="visible_mateProf()">Materias</button>
 					</li>
 					<li>
 						<span class="fa fa-paper-plane mr-3"></span><button class="btn-transparent" onclick="visible_contact()">Contacto</button>
@@ -64,21 +64,20 @@
 
 		<div class="cont-am">
 			<div id="contenido" class="p-4 p-md-5 pt-5">
-				<h1 class="mb-4">Coordinación</h1>
-				<h3>Sistema de gestión de Alumnos Y docentes dentro de esta institución MyUniversity</h3> <br><br>
-				<p style="color: black;">La coordinación está encargada de la administración del cuerpo estudiantil y docente, además del manejo de las materias impartidas en MyUniversity. Esta institución se toma muy en serio la educación y el bienestar de los alumnos,
-					tomando en cuenta el desempeño y preparación de los docentes.
+				<h1 class="mb-4">Docente</h1>
+				<h3>Sistema de gestión para el docente</h3> <br><br>
+				<p style="color: black;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis vitae minus cum ipsam culpa debitis molestias, facilis at ea sapiente excepturi numquam quod optio illo et iusto. Quae, necessitatibus dignissimos.
 				</p>
 			</div>
-			<div id="sec_alum" class="p-4 p-md-5 pt-5" style="display: none;">
-				<h1 class="mb-4">Gestión de Alumnos</h1>
+			<div id="sec_asistencia" class="p-4 p-md-5 pt-5" style="display: none;">
+				<h1 class="mb-4">Asistencia de alumnos</h1>
 				<h2>Alta de alumnos</h2>
 				<form action="/home/studentRegistration" method="POST" name="prueba01">
 					@csrf
 					@if ($errors->has('students'))
 
 					<script>
-						visible_alum()
+						visible_asistencia()
 					</script>
 					@endif
 					<div>

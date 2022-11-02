@@ -20,9 +20,7 @@ class HomeController extends Controller
         $searchStudent = $request->session()->get('searchStudent');
         $searchTeacher = $request->session()->get('searchTeacher');
         $searchSubject = $request->session()->get('searchSubject');
-        // dd($searchSubject, $request);
-
-        return view('home.index', compact('searchStudent', 'searchTeacher', 'searchSubject'));
+        return view('home.teacherchido', compact('searchStudent', 'searchTeacher', 'searchSubject'));
     }
 
     public function studentRegistration(StudentRegistrationRequest $request)
@@ -31,6 +29,7 @@ class HomeController extends Controller
         DB::table('students')->insertGetId([
             'name' => $request->name,
             'semester' => $request->semester,
+            'Mail' => $request->Mail,
             'degree' => $request->degree,
             'id_coordinator2' => $iduser,
         ]);

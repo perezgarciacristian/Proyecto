@@ -12,6 +12,11 @@
 </head>
 
 <body>
+    @if($errors->any())
+    <script>
+        alert("datos faltantes o incorrectos")
+        </script>
+    @endif
 
     <div class="cont-regi-max">
         <a href="/login">
@@ -99,7 +104,6 @@
                         </button>
                     </div>
                 </form>
-
             </div>
         </div>
     </div>

@@ -8,6 +8,7 @@
     <link rel="icon" href="/registro01/images/leones.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyUniversity</title>
+
   
 </head>
 
@@ -27,6 +28,13 @@
             <div id="log-vert">
 
                 <h3 id="log-log">LOGIN</h3>
+
+                @error('autentication')
+                <script>
+                    alert("correo o contraseña incorrecta")
+                    </script>
+                @enderror
+
                 <form action="" method="POST">
                     @csrf
                     <div class="code">

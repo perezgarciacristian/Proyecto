@@ -37,7 +37,7 @@ body{
 }
 
 #log-hori{
-    background-color: rgb(132, 156, 127);
+    background-color: rgb(197, 221, 17);
     width: 700px;
     height: 300px;
     position: fixed;
@@ -49,7 +49,7 @@ body{
     margin-top: -300px;
     margin-left: 60px;
     position: fixed;
-    background-color: rgb(236, 18, 218);
+    background-color: rgb(0, 0, 0);
     box-shadow: 5px 5px 8px rgb(32, 32, 32);
     width: 250px;
     height: 500px;

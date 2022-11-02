@@ -36,4 +36,10 @@ Route::get('/home/eliminarTeacher/{id}', [HomeController::class, 'eliminateTeach
 Route::get('/home/eliminarStudent/{id}', [HomeController::class, 'eliminateStudent']);
 Route::get('/home/eliminarSubject/{id}', [HomeController::class, 'eliminateSubject']);
 
+Route::get('/teacher', function() {
+
+    return view('home.teacherNuevo');
+});
+
+
 Route::get('/logout', [LogoutController::class, 'logout']);
